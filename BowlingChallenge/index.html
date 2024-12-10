@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bowling Game</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Bowling Simulator</h1>
+        <img id="pic" src="strike.png" alt="Bowling Game">
+    </div>
+    <div id="game-area">
+        <div id="game_info">
+            <div class="label" alt="total score">Total Score: <div class="text" id="score">0</div>
+            </div>
+            <div class="label" alt="high score">High Score: <div class="text" id="high_score">0</div>
+            </div>
+            <div class="label" alt=" frame number">Frame: <div class="text" id="frame">0</div>
+            </div>
+        </div>
+        <div id="button_panel">
+            <button id="roll" onclick="rollBall()" alt="roll ball">Roll</button>
+            <button id="cheater" onclick="toggleCheaterMode()" alt="toggle cheater">Cheater Mode</button>
+            <button id="loser" onclick="toggleLoserMode()" alt="toggle loser">Loser Mode</button>
+            <button id="rew_game" onclick="newGame()" alt = "start new game">New Game</button>
+        </div>
+        <div id="score_card">
+            
+        </div>
+        <div id="edit_frame">
+            <button id="edit_frame" onclick="editFrame()">Edit Frame</button>
+            <label for="frame_num" alt="frame to edit">Frame to edit:</label>
+            <input id="frame_num" type="text">
+            <label for="frame_score" alt="score to enter">Score to enter:</label>
+            <input id="frame_score" type="text">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
